@@ -1,0 +1,14 @@
+package fundamentos;
+
+public class AreaCircuferencia {
+
+	public static void main(String[] args) {
+		double raio = 3.4;       //Double é quando os numeros não são inteiros = 3,4 e 5,2, etc..
+		double pi = 3.14;
+		
+		double area = pi*raio*raio;
+		
+	   
+		
+	}
+}

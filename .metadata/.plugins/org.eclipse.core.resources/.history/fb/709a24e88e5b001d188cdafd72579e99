@@ -1,0 +1,25 @@
+package ooHerencaDesafio;
+
+public class Teste {
+	public static void main(String[] args) {
+
+		Ferrari c1 = new Ferrari();
+		c1.Acelerar();
+		c1.Acelerar();
+		c1.Acelerar();
+
+		System.out.println("Velocidade Atual da Ferrari: => "+c1.velocidade);
+		c1.Freiar();
+		System.out.println(c1.velocidade);
+
+		
+		Civic c2 = new Civic();
+		c2.Acelerar();
+		c2.Acelerar();
+		c2.Acelerar();
+
+		System.out.println(c2.velocidade);
+		c2.Freiar();
+		System.out.println(c2.velocidade);
+	}
+}

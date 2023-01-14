@@ -1,0 +1,11 @@
+
+public class Designer extends Funcionario{
+
+	public double getBonificacao() {
+	
+		System.out.println("Metodo do designer");
+		
+	return super.getBonificao()+200;
+	
+	}
+}

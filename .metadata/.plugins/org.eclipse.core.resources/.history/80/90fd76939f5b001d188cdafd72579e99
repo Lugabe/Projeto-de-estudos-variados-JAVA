@@ -1,0 +1,18 @@
+package ooHerencaDesafio;
+
+public class Ferrari extends Carro{
+
+	int velocidade = 0;
+
+	void Acelerar() {
+		if (velocidade <= 250)
+			velocidade += 15;
+	}
+
+	void Freiar() {
+		if (velocidade >= 15) {
+			velocidade -= 15;
+		}
+	}
+	
+}

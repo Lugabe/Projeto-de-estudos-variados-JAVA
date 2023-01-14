@@ -1,0 +1,27 @@
+package bytebankHerdadoContaTestes;
+
+import bytebankHerdadoContaModelo.Conta;
+import bytebankHerdadoContaModelo.ContaCorrente;
+import bytebankHerdadoContaModelo.GuardadorDeContas;
+
+public class Teste {
+
+	public static void main(String[] args) {
+
+		GuardadorDeContas guardador = new GuardadorDeContas();
+
+		Conta cc0 = new ContaCorrente(123, 11);
+		guardador.adicionar(cc0);
+
+		Conta cc1 = new ContaCorrente(22,321);
+		guardador.adicionar(cc1);
+		
+		int tamanho = guardador.getQuantidadeElementos();
+		
+		System.out.println(tamanho);
+		
+		Conta ref = guardador.getReferecia(0);
+		System.out.println(ref.getNumero());
+	}
+
+}

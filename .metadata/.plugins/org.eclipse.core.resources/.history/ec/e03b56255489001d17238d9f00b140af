@@ -1,0 +1,17 @@
+package bytebankHerdadoContaModelo;
+
+public class GuardadorDeContas {
+
+	private Conta referencias[];
+	private int posicaoLivre;
+
+	public GuardadorDeContas() {
+		this.referencias = new Conta[10];
+		posicaoLivre= 0;
+	}
+
+	public void adicionar(Conta ref) {
+		this.referencias[0] = ref;
+	}
+
+}

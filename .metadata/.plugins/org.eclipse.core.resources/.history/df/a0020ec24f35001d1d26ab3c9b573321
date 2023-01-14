@@ -1,0 +1,34 @@
+package fundamentos;
+
+public class AreaCircuferencia
+{
+
+	public static void main(String[] args) 
+	{
+		double raio = 5.5;         //Double é quando os numeros não são inteiros = 3,4 e 5,2, etc..
+		final double PI = 3.8; // final quer dizer que o valor não pode ser mudado 
+		
+		System.out.println("O valor da arena é"); double area = PI*raio*raio;
+		System.out.println("Antes o  raio valia " + area);
+		
+		raio= 40.1;
+		area = PI*raio*raio;
+		System.out.println("Agora o raio vale " + area+ " m2.");
+		
+		
+				
+		
+
+		
+				
+		
+		
+		
+		
+				
+				
+		
+		System.out.println("area = "+ area+ " m2."); // podemos colocar textos antes e depois do resultado com "" +
+
+	}
+}

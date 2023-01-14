@@ -1,0 +1,17 @@
+package bytebankHerdadoContaTestes;
+
+import bytebankHerdadoContaModelo.ContaCorrente;
+import bytebankHerdadoContaModelo.GuardadorDeContas;
+
+public class Teste {
+
+	public static void main(String[] args) {
+
+		GuardadorDeContas guardador = new GuardadorDeContas();
+		
+		ContaCorrente cc= new ContaCorrente(123, 321);
+		
+		guardador.adicionar(conta);
+	}
+
+}

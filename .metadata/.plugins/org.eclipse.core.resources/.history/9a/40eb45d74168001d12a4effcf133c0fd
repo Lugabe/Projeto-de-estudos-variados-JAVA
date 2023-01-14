@@ -1,0 +1,20 @@
+package Excecao.personalizadaA;
+
+public class TesteValidacoes {
+
+	public static void main(String[] args) {
+
+		Aluno aluno;
+		try {
+			aluno = new Aluno("", -7);
+		} catch (StringVaziaException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		Validar.usuario(aluno);
+		System.out.println("FIM");
+		
+		
+	}
+}

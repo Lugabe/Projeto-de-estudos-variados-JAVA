@@ -1,0 +1,26 @@
+package ooHerencaDesafio;
+
+public class Carro {
+
+	int velocidade = 0;
+	final int VELOCIDADE_MAXIMA;
+
+	
+	Carro(int VelocidadeMaxima) {
+		VELOCIDADE_MAXIMA = VelocidadeMaxima;
+	}
+
+	void Acelerar() {
+		if (velocidade <= 250)
+			velocidade += 5;
+	}
+
+	void Frear() {
+		if (velocidade >= 5) {
+			velocidade -= 5;
+
+		} else {
+			velocidade = 0;
+		}
+	}
+}

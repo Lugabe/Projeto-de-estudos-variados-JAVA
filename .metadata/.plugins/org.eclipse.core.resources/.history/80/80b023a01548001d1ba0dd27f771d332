@@ -1,0 +1,29 @@
+package ExerciciosFundamentos;
+
+import java.util.Scanner;
+
+public class RecebendoNumerosPositivos {
+
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner(System.in);
+
+		int numerospositivos = 0;
+
+		System.out.println("Digite um Numero");
+		int numero = entrada.nextInt();
+
+		while (numerospositivos != -numero) ;
+
+			System.out.println("digite outro numero");
+			int numero2 = entrada.nextInt();
+
+		
+		numerospositivos += numero + numero2;
+
+		System.out.println("soma dos numeros inseridos: " + numerospositivos);
+
+		entrada.close();
+	}
+
+}

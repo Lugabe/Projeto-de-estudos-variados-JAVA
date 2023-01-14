@@ -1,0 +1,13 @@
+package ooHerencaDesafio;
+
+public class Teste {
+	public static void main(String[] args) {
+
+		Ferrari c1 = new Ferrari();
+
+		System.out.println(c1.velocidade);
+		
+		
+		
+	}
+}

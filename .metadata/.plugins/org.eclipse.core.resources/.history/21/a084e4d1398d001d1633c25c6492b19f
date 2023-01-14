@@ -1,0 +1,32 @@
+package br.com.alura.java.io.teste;
+
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+
+public class TesteEscritaa {
+
+	public static void main(String[] args) throws IOException {
+
+		// Fluxo de Entrada com Arquivo
+		// Fluxo = Stream
+		// Entrada = Input
+
+		OutputStream fis = new FileOutputStream("lorem.txt");
+		// criando fluxo concreto binario
+
+		Writer isr = new OutputStreamWriter(fis);
+		// melhorando e transformando binarios para caracteres
+
+		BufferedWriter br = new BufferedWriter(isr);
+		// guarda os characteres em uma linha para leitura
+
+		
+		br.close();
+
+	}
+
+}

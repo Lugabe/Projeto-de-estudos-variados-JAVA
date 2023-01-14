@@ -1,0 +1,7 @@
+package ooHerencaDesafio;
+
+public class Civic extends Carro{
+	
+}
+
+

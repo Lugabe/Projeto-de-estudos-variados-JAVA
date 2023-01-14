@@ -1,0 +1,70 @@
+package bytebankHerdadoContaTestes;
+
+import bytebankHerdadoContaModelo.Cliente;
+import bytebankHerdadoContaModelo.Conta;
+import bytebankHerdadoContaModelo.ContaCorrente;
+import bytebankHerdadoContaModelo.GuardadorDeContas;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		//ARRAY DO TIPO CONTA
+		GuardadorDeContas guardador = new GuardadorDeContas();
+
+		Conta cc0 = new ContaCorrente(123, 11);
+		guardador.adicionar(cc0);
+
+		Conta cc1 = new ContaCorrente(22,321);
+		guardador.adicionar(cc1);
+		
+		int tamanho = guardador.getQuantidadeElementos();
+		
+		System.out.println(tamanho);
+		
+		Conta ref = guardador.getReferecia(0);
+		System.out.println(ref.getNumero());
+		
+		//CRIANDO UM ARRAY PARA GUARDAR QUALQUER OBJETO
+		GuardadorDeContas guardaObjetos = new GuardadorDeContas(args);
+		
+		
+		Cliente cliente = new Cliente();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		Cliente cliente = new Cliente();
+//		guardaObjetos.adicionar2(cliente);
+//		
+//		Cliente cliente2 = new Cliente();
+//		guardaObjetos.adicionar2(cliente2);
+//		
+//		int tamanho2= guardaObjetos.getQuantidadeElementosObject();
+//		
+//		System.out.println("Guarda qualquer Objetos: "+tamanho2);
+//		Object ref2 = guardaObjetos.getObjetos(0);
+//		
+//		System.out.println(ref2);
+//		
+		
+		
+		
+	}
+		
+		
+	
+
+}

@@ -1,0 +1,31 @@
+package bytebankHerdadoContaUtilTeste;
+
+import java.util.ArrayList;
+
+import bytebankHerdadoContaModelo.Conta;
+import bytebankHerdadoContaModelo.ContaCorrente;
+
+public class TesteArrayListEquals {
+
+	public static void main(String[] args) {
+
+		// <> se chama Generics
+		ArrayList<Conta> lista = new ArrayList<Conta>();
+
+		Conta cc0 = new ContaCorrente(123, 11);
+		lista.add(cc0);
+
+		Conta cc1 = new ContaCorrente(22, 321);
+		lista.add(cc1);
+
+		boolean existe = lista.contains(cc1);
+		
+		System.out.println("Já existe?" + existe);
+		
+		for (Conta conta : lista) {
+			System.out.println(conta);
+		}
+
+	}
+
+}

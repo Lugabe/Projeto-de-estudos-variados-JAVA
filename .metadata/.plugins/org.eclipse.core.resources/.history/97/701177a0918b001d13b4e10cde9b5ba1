@@ -1,0 +1,26 @@
+package bytebankHerdadoContaUtilTeste;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Teste {
+
+	public static void main(String[] args) {
+
+		int idade = 29;  //Integer veio para substituir o int
+		Integer idadeRef = new Integer(29);// o java faz isso por baixo dos panos
+		
+		List<Integer> primitivos = new ArrayList<Integer>();
+		
+		Integer idadeReff = Integer.valueOf(29); //Está é uma maneira de criar objeto
+												// apatir de um primitivo
+		
+		idadeReff.intValue();// aqui esta sendo pedido o primitivo 
+		
+		primitivos.add(idadeReff); // se chama de Autoboxing, a conversao automatica	
+							// de primitivos para objetos.
+		
+		
+	}
+
+}
